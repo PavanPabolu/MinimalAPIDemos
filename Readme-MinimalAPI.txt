@@ -30,8 +30,8 @@ Supported binding sources:
 Secure binding from IFormFile and IFormFileCollection
 https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis/parameter-binding?view=aspnetcore-8.0#bind-arrays-and-string-values-from-headers-and-query-strings:~:text=Secure%20binding%20from%20IFormFile%20and%20IFormFileCollection
 
-
-
+Test web APIs with the HttpRepl
+https://learn.microsoft.com/en-us/aspnet/core/web-api/http-repl/?view=aspnetcore-8.0&tabs=windows
 
 
 
