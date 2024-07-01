@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalAPI.App.ToDo", "MinimalAPI.App.ToDo\MinimalAPI.App.ToDo.csproj", "{3A342235-6A73-49ED-AB48-55F1CF45797E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{47F87DE1-2719-4733-9D0A-D5321BD7F35D}"
+	ProjectSection(SolutionItems) = preProject
+		Readme-MinimalAPI.txt = Readme-MinimalAPI.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalAPI.WebApp", "MinimalAPI.WebApp\MinimalAPI.WebApp.csproj", "{2547FA62-5EDB-43B3-979A-4DF589E5B6EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A342235-6A73-49ED-AB48-55F1CF45797E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A342235-6A73-49ED-AB48-55F1CF45797E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A342235-6A73-49ED-AB48-55F1CF45797E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A342235-6A73-49ED-AB48-55F1CF45797E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2547FA62-5EDB-43B3-979A-4DF589E5B6EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2547FA62-5EDB-43B3-979A-4DF589E5B6EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2547FA62-5EDB-43B3-979A-4DF589E5B6EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2547FA62-5EDB-43B3-979A-4DF589E5B6EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F9558951-86BC-45C3-BEF4-D36C8C2A758F}
+	EndGlobalSection
+EndGlobal
