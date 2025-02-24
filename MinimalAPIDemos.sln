@@ -3,16 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalAPI.App.ToDo", "MinimalAPI.App.ToDo\MinimalAPI.App.ToDo.csproj", "{3A342235-6A73-49ED-AB48-55F1CF45797E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinimalAPI.App.ToDo", "MinimalAPI.App.ToDo\MinimalAPI.App.ToDo.csproj", "{3A342235-6A73-49ED-AB48-55F1CF45797E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{47F87DE1-2719-4733-9D0A-D5321BD7F35D}"
 	ProjectSection(SolutionItems) = preProject
 		Readme-MinimalAPI.txt = Readme-MinimalAPI.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalAPI.WebApp", "MinimalAPI.WebApp\MinimalAPI.WebApp.csproj", "{2547FA62-5EDB-43B3-979A-4DF589E5B6EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinimalAPI.WebApp", "MinimalAPI.WebApp\MinimalAPI.WebApp.csproj", "{2547FA62-5EDB-43B3-979A-4DF589E5B6EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalAPI.ParameterBindings.WebApi", "MinimalAPI.ParameterBindings.WebApi\MinimalAPI.ParameterBindings.WebApi.csproj", "{E742C7E3-9977-4CE9-9E29-12FC2FD71B4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinimalAPI.ParameterBindings.WebApi", "MinimalAPI.ParameterBindings.WebApi\MinimalAPI.ParameterBindings.WebApi.csproj", "{E742C7E3-9977-4CE9-9E29-12FC2FD71B4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalAPI.AppBasic", "MinimalAPI.AppBasic\MinimalAPI.AppBasic.csproj", "{93CE38F9-07AF-4CAD-A139-B146A94BA3CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +34,10 @@ Global
 		{E742C7E3-9977-4CE9-9E29-12FC2FD71B4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E742C7E3-9977-4CE9-9E29-12FC2FD71B4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E742C7E3-9977-4CE9-9E29-12FC2FD71B4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93CE38F9-07AF-4CAD-A139-B146A94BA3CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93CE38F9-07AF-4CAD-A139-B146A94BA3CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93CE38F9-07AF-4CAD-A139-B146A94BA3CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93CE38F9-07AF-4CAD-A139-B146A94BA3CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
