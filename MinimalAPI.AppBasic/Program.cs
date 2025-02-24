@@ -1,35 +1,35 @@
-using System.Text.Json.Serialization;
-
-var builder = WebApplication.CreateSlimBuilder(args);
-
-builder.Services.ConfigureHttpJsonOptions(options =>
+public class Program
 {
-    options.SerializerOptions.TypeInfoResolverChain.Insert(0, AppJsonSerializerContext.Default);
-});
+    public static void Main(string[] args)
+    {
+        var builder = WebApplication.CreateBuilder(args);
 
-var app = builder.Build();
+        var app = builder.Build();
 
-var sampleTodos = new Todo[] {
-    new(1, "Walk the dog"),
-    new(2, "Do the dishes", DateOnly.FromDateTime(DateTime.Now)),
-    new(3, "Do the laundry", DateOnly.FromDateTime(DateTime.Now.AddDays(1))),
-    new(4, "Clean the bathroom"),
-    new(5, "Clean the car", DateOnly.FromDateTime(DateTime.Now.AddDays(2)))
-};
 
-var todosApi = app.MapGroup("/todos");
-todosApi.MapGet("/", () => sampleTodos);
-todosApi.MapGet("/{id}", (int id) =>
-    sampleTodos.FirstOrDefault(a => a.Id == id) is { } todo
-        ? Results.Ok(todo)
-        : Results.NotFound());
 
-app.Run();
+        var products = new Product[] {
+            new(1, "Laptop", 999),
+            new(2, "HeadPhones", 199),
+            new(3, "SmartPhone", 699)
+        };
 
-public record Todo(int Id, string? Title, DateOnly? DueBy = null, bool IsComplete = false);
+        app.MapGet("api/products", () => products);
 
-[JsonSerializable(typeof(Todo[]))]
-internal partial class AppJsonSerializerContext : JsonSerializerContext
-{
+        //var myendpoints = app.MapGroup("/v1");
+        //myendpoints.MapGet("/", () => "HEllo World!"); 
+        //myendpoints.MapGet("/product/{id}", (int id) =>
+        //                    products.FirstOrDefault(p => p.Id == id) is { } prod ? Results.Ok(prod) : Results.NotFound()
+        //                    );
+
+        //http://localhost:5095/api/products
+        //http://localhost:5095/v1
+        //http://localhost:5095/v1/product/2
+
+        app.Run();
+    }
+
+
+    public record Product(int Id, string Name, int Price);
 
 }
